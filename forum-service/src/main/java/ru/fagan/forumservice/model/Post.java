@@ -15,7 +15,7 @@ import java.util.UUID;
         indexes = {
                 @Index(name = "idx_post_branch", columnList = "branch_id"),
                 @Index(name = "idx_post_user", columnList = "user_id"),
-                @Index(name = "idx_post_parent", columnList = "parent_id")
+                @Index(name = "idx_post_parent", columnList = "parent_id"),
                 @Index(name = "idx_post_deleted", columnList = "deleted_at")
         }
 )
