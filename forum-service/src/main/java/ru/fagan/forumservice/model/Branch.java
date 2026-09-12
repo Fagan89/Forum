@@ -52,7 +52,7 @@ public class Branch {
     @Column(name = "last_post_id")
     private UUID lastPostId;
 
-    @Column(name = "last_commet_date")
+    @Column(name = "last_comment_date")
     private Instant lastCommentDate;
 
     @Column(name = "deleted_at")
