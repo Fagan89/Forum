@@ -59,11 +59,11 @@ public class Post {
 
     @CreationTimestamp
     @Column(name = "created_at", nullable = false)
-    private ZonedDateTime createdAt;
+    private Instant createdAt;
 
     @UpdateTimestamp
     @Column(name = "updated_at", nullable = false)
-    private ZonedDateTime updatedAt;
+    private Instant updatedAt;
 
     @Version
     @Column(name = "version", nullable = false)
