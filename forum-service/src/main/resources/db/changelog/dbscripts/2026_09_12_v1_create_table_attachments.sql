@@ -13,7 +13,7 @@ CREATE TABLE attachments
         REFERENCES posts (id)
 );
 
-CREATE INDEX idx_attachment_post ON attachments(post_id)
+CREATE INDEX idx_attachment_post ON attachments(post_id);
 
 COMMENT ON TABLE attachments IS 'Метаданные файла, прикреплённого к сообщению. Файлы хранятся во внешнем хранилище.';
 

@@ -19,7 +19,7 @@ CREATE TABLE branches
     CONSTRAINT fk_branch_user FOREIGN KEY (user_id)
         REFERENCES forum_users(id),
     CONSTRAINT fk_branch_topic FOREIGN KEY (topic_id)
-        REFERENCES topics(id)
+        REFERENCES topics(topic_id)
 );
 
 CREATE INDEX idx_branch_topic ON branches(topic_id);
@@ -27,7 +27,7 @@ CREATE INDEX idx_branch_user ON branches(user_id);
 
 COMMENT ON TABLE branches IS 'Ветка обсуждения (thread) внутри раздела форума. Хранит счётчики и данные последнего сообщения для быстрых лент. Мягкое удаление через deleted_at.';
 
-COMMENT ON COLUMN branches.id IS 'Уникальный идентификатор записи (UUID v7, генерируется приложением).';
+COMMENT ON COLUMN branches.branch_id IS 'Уникальный идентификатор записи (UUID v7, генерируется приложением).';
 COMMENT ON COLUMN branches.topic_id IS 'Раздел, к которому относится ветка. Внешний ключ на topics.id.';
 COMMENT ON COLUMN branches.user_id IS 'Автор ветки. Внешний ключ на forum_users.id.';
 COMMENT ON COLUMN branches.title IS 'Заголовок ветки обсуждения.';

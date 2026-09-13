@@ -3,9 +3,9 @@ spring:
     name: forum-service
 
   datasource:
-    url: jdbc:postgresql://localhost:5435/forum_db
-    username: ${POSTGRES_USER:forum_user}
-    password: ${POSTGRES_PASSWORD:postgres}
+    url: jdbc:postgresql://localhost:5435/db_forum
+    username: ${POSTGRES_USER:user}
+    password: ${POSTGRES_PASSWORD:password}
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -18,5 +18,5 @@ spring:
         format_sql: true
 
   liquibase:
-    change-log: classpath:db/changelog/changelog.yaml
+    change-log: classpath:db/changelog/changelog-master.yaml
     enabled: true

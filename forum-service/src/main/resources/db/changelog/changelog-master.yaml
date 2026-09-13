@@ -11,12 +11,23 @@ databaseChangeLog:
         endDelimiter: ;
 
   - changeSet:
-      id: 2026_09_12_v1_create_table_attachments.sql
+      id: 2026_09_12_v1_create_table_moderation_audit_logs.sql
       author: fagan
       comment: >
-        Создание таблицы attachments (сущность Attachment) — метаданные файла.
+        Создание таблицы moderation_audit_logs (сущность ModerationAuditLog)
       sqlFile:
-        path: dbscripts/2026_09_12_v1_create_table_attachments.sql
+        path: dbscripts/2026_09_12_v1_create_table_moderation_audit_logs.sql
+        relativeToChangelogFile: true
+        splitStatements: true
+        endDelimiter: ;
+
+  - changeSet:
+      id: 2026_09_12_v1_create_table_topics.sql
+      author: fagan
+      comment: >
+        Создание таблицы topics (сущность Topic) — раздел/категория форума.
+      sqlFile:
+        path: dbscripts/2026_09_12_v1_create_table_topics.sql
         relativeToChangelogFile: true
         splitStatements: true
         endDelimiter: ;
@@ -34,17 +45,6 @@ databaseChangeLog:
         endDelimiter: ;
 
   - changeSet:
-      id: 2026_09_12_v1_create_table_topics.sql
-      author: fagan
-      comment: >
-        Создание таблицы topics (сущность Topic) — раздел/категория форума.
-      sqlFile:
-        path: dbscripts/2026_09_12_v1_create_table_topics.sql
-        relativeToChangelogFile: true
-        splitStatements: true
-        endDelimiter: ;
-
-  - changeSet:
       id: 2026_09_12_v1_create_table_posts.sql
       author: fagan
       comment: >
@@ -57,12 +57,12 @@ databaseChangeLog:
         endDelimiter: ;
 
   - changeSet:
-      id: 2026_09_12_v1_create_table_moderation_audit_logs.sql
+      id: 2026_09_12_v1_create_table_attachments.sql
       author: fagan
       comment: >
-        Создание таблицы moderation_audit_logs (сущность ModerationAuditLog)
+        Создание таблицы attachments (сущность Attachment) — метаданные файла.
       sqlFile:
-        path: dbscripts/2026_09_12_v1_create_table_moderation_audit_logs.sql
+        path: dbscripts/2026_09_12_v1_create_table_attachments.sql
         relativeToChangelogFile: true
         splitStatements: true
         endDelimiter: ;
