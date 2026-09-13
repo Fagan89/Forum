@@ -4,33 +4,36 @@ databaseChangeLog:
       author: fagan
       comment: >
         Создание таблицы forum_users (сущность ForumUser).
-      sqlFile:
-        path: dbscripts/2026_09_12_v1_create_table_forum_users.sql
-        relativeToChangelogFile: true
-        splitStatements: true
-        endDelimiter: ;
+      changes:
+        - sqlFile:
+            path: dbscripts/2026_09_12_v1_create_table_forum_users.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            endDelimiter: ;
 
   - changeSet:
       id: 2026_09_12_v1_create_table_moderation_audit_logs.sql
       author: fagan
       comment: >
         Создание таблицы moderation_audit_logs (сущность ModerationAuditLog)
-      sqlFile:
-        path: dbscripts/2026_09_12_v1_create_table_moderation_audit_logs.sql
-        relativeToChangelogFile: true
-        splitStatements: true
-        endDelimiter: ;
+      changes:
+        - sqlFile:
+            path: dbscripts/2026_09_12_v1_create_table_moderation_audit_logs.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            endDelimiter: ;
 
   - changeSet:
       id: 2026_09_12_v1_create_table_topics.sql
       author: fagan
       comment: >
         Создание таблицы topics (сущность Topic) — раздел/категория форума.
-      sqlFile:
-        path: dbscripts/2026_09_12_v1_create_table_topics.sql
-        relativeToChangelogFile: true
-        splitStatements: true
-        endDelimiter: ;
+      changes:
+        - sqlFile:
+            path: dbscripts/2026_09_12_v1_create_table_topics.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            endDelimiter: ;
 
   - changeSet:
       id: 2026_09_12_v1_create_table_branches.sql
@@ -38,11 +41,12 @@ databaseChangeLog:
       comment: >
         Создание таблицы branches (сущность Branch) — ветка (thread) внутри
                 раздела.
-      sqlFile:
-        path: dbscripts/2026_09_12_v1_create_table_branches.sql
-        relativeToChangelogFile: true
-        splitStatements: true
-        endDelimiter: ;
+      changes:
+        - sqlFile:
+            path: dbscripts/2026_09_12_v1_create_table_branches.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            endDelimiter: ;
 
   - changeSet:
       id: 2026_09_12_v1_create_table_posts.sql
@@ -50,22 +54,24 @@ databaseChangeLog:
       comment: >
         Создание таблицы posts (сущность Post) — стартовое сообщение ветки или
                 комментарий
-      sqlFile:
-        path: dbscripts/2026_09_12_v1_create_table_posts.sql
-        relativeToChangelogFile: true
-        splitStatements: true
-        endDelimiter: ;
+      changes:
+        - sqlFile:
+            path: dbscripts/2026_09_12_v1_create_table_posts.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            endDelimiter: ;
 
   - changeSet:
       id: 2026_09_12_v1_create_table_attachments.sql
       author: fagan
       comment: >
         Создание таблицы attachments (сущность Attachment) — метаданные файла.
-      sqlFile:
-        path: dbscripts/2026_09_12_v1_create_table_attachments.sql
-        relativeToChangelogFile: true
-        splitStatements: true
-        endDelimiter: ;
+      changes:
+        - sqlFile:
+            path: dbscripts/2026_09_12_v1_create_table_attachments.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            endDelimiter: ;
 
   - changeSet:
       id: 2026_09_12_v1_create_table_reactions.sql
@@ -73,19 +79,21 @@ databaseChangeLog:
       comment: >
         Создание таблицы reactions (сущность Reaction) — реакция пользователя
                на сообщение.
-      sqlFile:
-        path: dbscripts/2026_09_12_v1_create_table_reactions.sql
-        relativeToChangelogFile: true
-        splitStatements: true
-        endDelimiter: ;
+      changes:
+        - sqlFile:
+            path: dbscripts/2026_09_12_v1_create_table_reactions.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            endDelimiter: ;
 
   - changeSet:
       id: 2026_09_12_v1_create_table_subscriptions.sql
       author: fagan
       comment: >
         Создание таблицы subscriptions (сущность Subscription)
-      sqlFile:
-        path: dbscripts/2026_09_12_v1_create_table_subscriptions.sql
-        relativeToChangelogFile: true
-        splitStatements: true
-        endDelimiter: ;
+      changes:
+        - sqlFile:
+            path: dbscripts/2026_09_12_v1_create_table_subscriptions.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            endDelimiter: ;
