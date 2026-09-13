@@ -4,7 +4,7 @@ services:
   # ---------------------------------------------------------------------------
   postgres:
     image: postgres:17-alpine
-    container_name: postgres_orderhub
+    container_name: postgres_forum
     ports:
       - "${POSTGRES_PORT}:5432"
     environment:
